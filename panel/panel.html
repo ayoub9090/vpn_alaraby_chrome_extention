@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="panel.js"></script>
+	<style>
+	.text {
+	font-size:14px;
+	font-weight:bold;
+	direction:rtl;
+	text-align:justify;
+	color:#000;
+	}
+	.browsenow1 {
+	position:absolute;
+	top:205px;
+	right:10px;
+	direction:rtl;
+	font-size:14px;
+	font-weight:bold;
+	}
+	.brdr {
+	width:100%;
+	height:1px;
+	border-bottom-color:#CCC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-top:10px;
+	padding-bottom:10px;
+	clear:both
+	}
+	.onoffswitch {
+    position: absolute;
+	top:200px;
+	right:100px;
+	width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	clear:both;
+	
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+#loading {    
+	position: absolute;
+    top: 198px;
+    right: 200px;
+    width: 32px;
+	display:none;
+	}
+	</style>
+  </head>
+  <body style="min-height:235px;">
+    <div><img src="../images/topbar.png"></div>
+	<div class="text">في سعيه الدائم لتطوير خدماته وتوفير الوسائل التقنية المتطورة لضمان وصول القراء الى موقع "العربي الجديد" الإلكتروني بسهولة ومن أي مكان، يوفر العربي الجديد هذه الإضافة الى متصفح كروم والذي يتيح للقراء الكرام تصفح الموقع في البلاد التي تحجبه. تنمنى لكم قراءة ممتعة ومفيدة.
+</div>
+<div class="brdr"><div>
+
+<div class="browsenow1" >تصفح بأمان :</div>
+<div style="height:60px;"><div>
+<img id="loading" src="../loading.gif" />
+<div class="onoffswitch" id="ttt" >
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" >
+    <label class="onoffswitch-label" for="myonoffswitch" >
+        <span class="onoffswitch-inner" ></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+	
+</div>
+
+  </body>
+</html>

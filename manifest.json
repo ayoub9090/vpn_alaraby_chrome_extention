@@ -1,0 +1,29 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "background": {
+      "persistent": true,
+      "scripts": [ 
+	  "background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "assets/icons/icon-disconnected-19.png",
+         "38": "assets/icons/icon-disconnected-38.png"
+      },
+      "default_popup": "panel/panel.html",
+      "default_title": "العربي الجديد"
+   },
+   "content_security_policy": "script-src 'self' https://bnc.lt https://cdn.branch.io/; object-src 'self';",
+   "description": "يوفر العربي الجديد هذه الإضافة الى متصفح كروم والذي يتيح للقراء الكرام تصفح الموقع في البلاد التي تحجبه. تنمنى لكم قراءة ممتعةومفيدة",
+   "icons": {
+      "128": "assets/icons/icon-128.png",
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "العربي الجديد",
+   "permissions": [ "*://alaraby.co.uk/*", "tabs", "storage", "proxy", "identity", "notifications", "webRequest", "webRequestBlocking", "activeTab", "alarms", "contextMenus", "declarativeContent", "gcm", "identity", "idle", "gcm", "history", "identity", "idle", "management", "nativeMessaging", "notifications", "pageCapture", "power", "proxy", "sessions", "tabCapture", "tabs", "topSites", "webNavigation", "webRequest", "contextMenus", "webNavigation", "cookies", "unlimitedStorage", "management", "idle", "chrome://favicon/", "chrome://favicon/*", "http://*/*", "https://*/*" ],
+   "short_name": "العربي الجديد",
+   "version": "2.3"
+}
